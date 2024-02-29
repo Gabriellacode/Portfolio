@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--branco);
+  box-sizing: border-box;
+  color: var(--azulEscuro);
+}
+
+:root {
+  --preto: black;
+  --branco: white;
+  --azul: rgb(220, 242, 241);
+  --azulClaro: rgb(127, 199, 217);
+  --azulMedio: rgb(54, 84, 134);
+  --azulEscuro: rgb(15, 16, 53);
+}
+
+span{
+  color: var(--azulClaro);
+  font-weight: normal;
+}
+
+.nav_bar{
+  display: flex;
+  background-color: var(--azulMedio);
+  height: 6.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_bar_redeSocial{
+  display: flex;
+  gap:1.5rem ;
+  list-style-type: none;
+}
+
+.nav_bar_redeSocial_link{
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 1.5rem;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 0.313rem 0.625rem;
+  border-color: var(--branco);
+}
+
+.nav_bar_redeSocial_link:hover{
+  color: var(--azulClaro);
+  border-color: var(--azulClaro);
+}
+
+.biografia{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.biografia_nome{
+  font-size: 4.5rem;
+  margin: 6.25rem 0 1.563rem 0;
+}
+
+.biografia_profissao{
+  font-size: 1.875rem;
+}
+
+.biografia_texto{
+  font-size: 1.5rem;
+  margin: 4.688rem 18.75rem;
+  text-align: justify;
+  line-height: 2.5rem;
+}
+
+.biografia_texto span{
+  font-weight: bold;
+}
+
+.icone_lista{
+  display: flex;
+  justify-content: center;
+  gap: 3.125rem;
+  margin-bottom:12.5rem;
+  list-style-type: none;
+}
+
+.icone_lista_img{
+  height: 5rem;
+  margin-bottom: auto;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+  height: 6.25rem;
+  background-color: var(--azulMedio);
+}
+
+.autora{
+  color: var(--branco);
+  font-size: 1rem;
+}
+
+.avatar {
+  height: 3.125rem;
+}
+
+@media only screen and (max-width: 800px){
+  .biografia_texto{
+    margin: 4.688rem 9.375rem;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .biografia_profissao{
+    margin: 0 5rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .biografia_profissao{
+    margin: 0 2.5rem;
+    text-align: center; 
+  }
+
+   .biografia_texto{
+    margin: 4.688rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .nav_bar_redeSocial{
+    gap:0.9rem ;
+  }
+
+  .nav_bar_redeSocial_link{
+    padding: 0.2rem 0.3rem;
+  }
+
+  .biografia_nome{
+    text-align: center; 
+    line-height: 5rem;
+    margin: 6.25rem 0 1.563rem 0;
+  }
+
+   .biografia_texto{
+      margin: 4.688rem 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .nav_bar_redeSocial_link{
+    text-decoration: underline;
+    border: 0px solid;
+    padding: 0.313rem 0;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .nav_bar_redeSocial{
+    gap: 0.5em;
+  }
+}
