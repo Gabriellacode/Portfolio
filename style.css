@@ -1,6 +1,7 @@
 *{
   margin: 0;
 	padding: 0;
+	border: 0;
 }
 
 html{
@@ -49,9 +50,10 @@ span{
   text-decoration: none;
   color: var(--branco);
   font-size: 1.5rem;
-  border: 2px solid var(--branco);
+  border: 2px solid;
   border-radius: 8px;
   padding: 0.313rem 0.625rem;
+  border-color: var(--branco);
 }
 
 .nav_bar_redeSocial_link:hover{
@@ -137,6 +139,7 @@ span{
 
    .biografia_texto{
     margin: 4.688rem 5rem;
+    text-align: center;
   }
 }
 
@@ -157,7 +160,6 @@ span{
 
    .biografia_texto{
       margin: 4.688rem 2.5rem;
-      text-align: center; 
   }
 }
 
@@ -171,6 +173,6 @@ span{
 
 @media only screen and (max-width: 320px){
   .nav_bar_redeSocial{
-    gap: 0.5em;
+    gap: 0.5rem;
   }
 }
